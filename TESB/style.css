@@ -1,18 +1,18 @@
-/* ================= RESET DASAR ================= */
+/* RESET DASAR */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ================= BODY ================= */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f2f2f2;
   padding: 15px;
 }
 
-/* ================= CONTAINER ================= */
+/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -22,46 +22,36 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ================= JUDUL ================= */
+/* JUDUL */
 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* ================= INPUT PENCARIAN ================= */
+/* INPUT PENCARIAN (BESAR & NYAMAN) */
 #searchInput {
   width: 100%;
   padding: 20px 12px;
   font-size: 20px;
-  border: 2px solid #007bff;
   border-radius: 14px;
-  margin-bottom: 14px;
+  border: 2px solid #007bff;
+  margin-bottom: 20px;
   outline: none;
-  background: #fff;
 }
 
-/* FOCUS TIDAK MENGUBAH UKURAN */
 #searchInput:focus {
   border-color: #0056b3;
 }
 
-/* ================= WRAPPER TABEL ================= */
-.table-wrapper {
-  width: 100%;
-  border: 2px solid #007bff;   /* SAMA PERSIS DENGAN INPUT */
-  border-radius: 14px;
-  overflow: hidden;            /* KUNCI AGAR TIDAK “GESER” */
-  background: #fff;
-}
-
-/* ================= TABEL ================= */
+/* TABEL */
 table {
   width: 100%;
   border-collapse: collapse;
+  background: #fff;
 }
 
-/* ================= HEADER TABEL ================= */
+/* HEADER TABEL */
 th {
   background: #007bff;
   color: white;
@@ -72,43 +62,50 @@ th {
   top: 0;
 }
 
-/* ================= ISI TABEL ================= */
+/* ISI TABEL */
 td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
   font-size: 15px;
 }
 
-/* ================= WARNA BARIS ================= */
+/* WARNA SELANG-SELING */
 tr:nth-child(even) {
   background: #f9f9f9;
 }
 
-/* ================= HOVER ================= */
+/* HOVER (ASLI) */
 tr:hover {
   background: #e9f2ff;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
+  /* JUDUL */
   h2 {
     font-size: 22px;
   }
 
+  /* KOLOM CARI DATA - KHUSUS HP */
   #searchInput {
-    padding: 26px 22px;
-    font-size: 24px;
+    width: 100%;
+    padding: 26px 22px;   /* 🔥 tinggi & nyaman disentuh */
+    font-size: 24px;      /* 🔥 teks besar */
     border-radius: 16px;
   }
 
-  .table-wrapper {
-    border-radius: 16px;
-  }
-
-  th,
-  td {
+  /* TABEL */
+  th, td {
     font-size: 18px;
     padding: 18px;
   }
 }
+/* WRAPPER TABEL AGAR SEJAJAR DENGAN INPUT */
+.table-wrapper {
+  width: 100%;
+  border: 2px solid #007bff;   /* samakan dengan input */
+  border-radius: 14px;        /* samakan dengan input */
+  overflow: hidden;
+}
+
+
