@@ -11,9 +11,10 @@
    BODY
 ========================= */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;
   background: #f2f2f2;
-  padding: 15px;
+  padding: 15px;*/
+   overflow-x: hidden;
 }
 
 /* =========================
@@ -79,8 +80,9 @@ h2 {
 ========================= */
 table {
   width: 100%;                /* 🔥 SAMA DENGAN INPUT */
-  border-collapse: collapse;
-  background: #ffffff;
+  /*border-collapse: collapse;
+  background: #ffffff;*/
+  table-layout: fixed;
 }
 
 /* =========================
@@ -134,10 +136,11 @@ tr:hover {
   }
 
   th, td {
-    font-size: 16px;
-    padding: 14px;
+    /*font-size: 16px;
+    padding: 14px;*/
      word-break: break-all;
 }
   }
 }
+
 
