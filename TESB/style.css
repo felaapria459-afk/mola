@@ -136,5 +136,8 @@ tr:hover {
   th, td {
     font-size: 16px;
     padding: 14px;
+     word-break: break-all;
+}
   }
 }
+
