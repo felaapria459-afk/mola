@@ -100,6 +100,14 @@ tr:hover {
     padding: 18px;
   }
 }
+/* WRAPPER TABEL AGAR SEJAJAR DENGAN INPUT */
+.table-wrapper {
+  width: 100%;
+  border: 2px solid #007bff;   /* samakan dengan input */
+  border-radius: 14px;        /* samakan dengan input */
+  overflow: hidden;
+}
+
 
 
 
