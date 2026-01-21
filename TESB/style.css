@@ -1,24 +1,18 @@
-/* =========================
-   RESET DASAR
-========================= */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* =========================
-   BODY
-========================= */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f2f2f2;
   padding: 15px;
 }
 
-/* =========================
-   KARTU PUTIH UTAMA
-========================= */
+/* KARTU PUTIH UTAMA */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -28,113 +22,51 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* =========================
-   LINK KEMBALI (OPSIONAL)
-========================= */
-.back {
-  display: inline-block;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-/* =========================
-   JUDUL
-========================= */
+/* JUDUL */
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
 }
 
-/* =========================
-   KOLOM PENCARIAN
-========================= */
+/* INPUT PENCARIAN */
 #searchInput {
-  width: 100%;                 /* 🔥 SEJAJAR DENGAN TABEL */
+  width: 100%;
   padding: 18px 16px;
   font-size: 18px;
-  border: 2px solid #007bff;   /* border biru */
-  border-radius: 14px;        /* lengkung sama tabel */
+  border: 2px solid #007bff;
+  border-radius: 14px;
   margin-bottom: 16px;
   outline: none;
-  background: #ffffff;
 }
 
-#searchInput:focus {
-  border-color: #0056b3;
-}
-
-/* =========================
-   WRAPPER TABEL
-========================= */
+/* WRAPPER TABEL (BIAR PAS) */
 .table-wrapper {
-  width: 100%;                /* 🔥 KUNCI SEJAJAR */
-  overflow-x: auto;           /* aman di HP */
+  width: 100%;
+  overflow-x: auto;
 }
 
-/* =========================
-   TABEL
-========================= */
+/* TABEL */
 table {
-  width: 100%;                /* 🔥 SAMA DENGAN INPUT */
+  width: 100%;
   border-collapse: collapse;
-  background: #ffffff;
 }
 
-/* =========================
-   HEADER TABEL (BIRU)
-========================= */
+/* HEADER TABEL (BIRU) */
 th {
   background: #007bff;
-  color: #ffffff;
+  color: white;
   padding: 14px;
   text-align: left;
   font-size: 16px;
-  position: sticky;
-  top: 0;
 }
 
-/* =========================
-   ISI TABEL
-========================= */
+/* ISI TABEL */
 td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
-  font-size: 15px;
 }
 
-/* =========================
-   WARNA SELANG-SELING
-========================= */
+/* GARIS SELANG-SELING */
 tr:nth-child(even) {
   background: #f9f9f9;
-}
-
-/* =========================
-   HOVER
-========================= */
-tr:hover {
-  background: #e9f2ff;
-}
-
-/* =========================
-   RESPONSIVE (HP)
-========================= */
-@media (max-width: 768px) {
-
-  h2 {
-    font-size: 22px;
-  }
-
-  #searchInput {
-    padding: 22px 18px;
-    font-size: 20px;
-  }
-
-  th, td {
-    font-size: 16px;
-    padding: 14px;
-  }
 }
